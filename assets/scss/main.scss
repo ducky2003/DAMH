@@ -1,0 +1,13 @@
+@import "header";
+@import "__variables";
+@import "__common_class";
+
+html {
+    font-size: 10px;
+    font-family: $primary-font;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 16px;
+}
