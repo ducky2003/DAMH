@@ -1,5 +1,5 @@
-@import "__variables";
-@import "__common_class";
+@import "../common/__variables";
+@import "../common/__common_class";
 
 #header {
     height: 40px;
@@ -32,7 +32,7 @@
 }
 
 .header__search-phase {
-    flex: 2;
+    flex: 3;
     position: relative;
 
     .search-phase__search-icon {

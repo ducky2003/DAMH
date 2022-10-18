@@ -1,0 +1,39 @@
+@import "../common/__variables";
+@import "../common/__common_class";
+
+.left-sidebar {
+    flex-basis: 13%;
+    user-select: none;
+}
+
+.navbar-items {
+    padding: 16px;
+    padding-left: 0;
+    list-style: none;
+}
+
+.navbar__item {
+    font-size: 1.4rem;
+    border-radius: 8px;
+    color: $primary-color;
+    background-color: #fff;
+    padding: 10px 16px;
+
+    :hover {
+        cursor: pointer;
+    }
+}
+
+.navbar__item.active {
+    color: #fff;
+    background-color: #4E5D78;
+}
+
+.item__content {
+    display: flex;
+    align-items: center;
+}
+
+.item__content__title {
+    margin-left: 16px;
+}
