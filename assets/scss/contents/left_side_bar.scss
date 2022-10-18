@@ -10,6 +10,12 @@
     padding: 16px;
     padding-left: 0;
     list-style: none;
+
+}
+
+.navbar__item:hover {
+    cursor: pointer;
+    background-color: #F9FAFB;
 }
 
 .navbar__item {
@@ -18,10 +24,6 @@
     color: $primary-color;
     background-color: #fff;
     padding: 10px 16px;
-
-    :hover {
-        cursor: pointer;
-    }
 }
 
 .navbar__item.active {

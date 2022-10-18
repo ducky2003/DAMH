@@ -34,6 +34,13 @@ h6 {
   overflow-wrap: break-word;
 }
 
+.post-container {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.0588235294);
+}
+
 #header {
   height: 40px;
   padding: 16px 0;
@@ -47,7 +54,7 @@ h6 {
 }
 
 .first-phase {
-  flex-basis: 50%;
+  flex-basis: 54%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -135,6 +142,13 @@ h6 {
   overflow-wrap: break-word;
 }
 
+.post-container {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.0588235294);
+}
+
 .left-sidebar {
   flex-basis: 13%;
   user-select: none;
@@ -146,15 +160,17 @@ h6 {
   list-style: none;
 }
 
+.navbar__item:hover {
+  cursor: pointer;
+  background-color: #F9FAFB;
+}
+
 .navbar__item {
   font-size: 1.4rem;
   border-radius: 8px;
   color: #4d5d78;
   background-color: #fff;
   padding: 10px 16px;
-}
-.navbar__item :hover {
-  cursor: pointer;
 }
 
 .navbar__item.active {
@@ -177,6 +193,67 @@ h6 {
 
 .main-content {
   flex-basis: 60%;
+  padding: 32px;
+  padding-bottom: 0;
+  background-color: #F9FAFB;
+  border-radius: 16px;
+  display: flex;
+  gap: 32px;
+}
+.main-content .feed-phase {
+  flex: 2;
+}
+
+.new-post__box {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.new-post__box .new-post__box__avatar {
+  width: 48px;
+  border-radius: 50%;
+  object-fit: contain;
+  overflow: hidden;
+}
+.new-post__box .new-post__box__status {
+  width: 100%;
+  background-color: #F9FAFB;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.4rem;
+}
+
+.new-post__list-button {
+  margin-top: 16px;
+  display: flex;
+  font-size: 1.4rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.new-post__list-button .list-button__button:last-child {
+  background-color: #377dff;
+  color: #fff;
+}
+.new-post__list-button .list-button__button:last-child:hover {
+  opacity: 0.8;
+}
+
+.list-button__button:hover {
+  cursor: pointer;
+  background-color: #F9FAFB;
+}
+
+.list-button__button {
+  padding: 10px 24px;
+  border-radius: 10px;
+}
+.list-button__button .button-icon {
+  margin-right: 8px;
+}
+
+.event-phase {
+  flex: 1;
 }
 
 .content-container {
@@ -217,6 +294,13 @@ h4,
 h5,
 h6 {
   overflow-wrap: break-word;
+}
+
+.post-container {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.0588235294);
 }
 
 html {
