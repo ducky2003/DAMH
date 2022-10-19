@@ -1,42 +1,12 @@
-* {
-    margin: 0;
-    padding: 0;
-    font: inherit;
-}
-
-body {
-    line-height: 1.5;
-}
-
-img,
-picture,
-video,
-canvas,
-svg {
-    display: block;
-    max-width: 100%;
-}
-
-input,
-button,
-textarea,
-select {
-    outline: none;
-}
-
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    overflow-wrap: break-word;
-}
-
 .post-container {
     background-color: #fff;
     border-radius: 16px;
     padding: 16px;
     box-shadow: 0 0 16px #0000000f;
+    margin-bottom: 12px;
+}
+
+.pd-l-r-16 {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
 }

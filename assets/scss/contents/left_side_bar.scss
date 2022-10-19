@@ -2,19 +2,26 @@
 @import "../common/__common_class";
 
 .left-sidebar {
+    position: fixed;
+    top: 72px;
+    left: 16px;
+    bottom: 0;
+    background-color: #fff;
+    width: 13%;
     flex-basis: 13%;
     user-select: none;
+    z-index: 100;
 }
 
 .navbar-items {
     padding: 16px;
     padding-left: 0;
     list-style: none;
+    cursor: pointer;
 
 }
 
 .navbar__item:hover {
-    cursor: pointer;
     background-color: #F9FAFB;
 }
 
@@ -36,6 +43,7 @@
     align-items: center;
 }
 
-.item__content__title {
-    margin-left: 16px;
+.item__content__icon {
+    display: block;
+    width: 32px;
 }
