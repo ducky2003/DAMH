@@ -419,3 +419,242 @@
 .event-phase {
     flex: 1;
 }
+
+.event-phase__first{
+    background-color: #fff;
+    width: 236px;
+    height: 220px;
+    border-radius: 13px;
+}
+
+.event-phase__first__head{
+    height: 44px;
+    width: 236px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+}
+
+.event-phase__first__head >h2{
+    font-weight: 600;
+    color: #6198FF;
+    padding-right: 20px;
+}
+
+.event-phase__first__head >h2:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.event-phase__first__head >h3{
+    font-weight: 500;
+    color: #333;
+    padding-left: 20px;
+}
+
+.event-phase__first__content{
+    margin: 20px 20px 0 20px;
+    display: flex;
+}
+
+.event-phase__first__content img{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    // margin: 20px;
+}
+
+.event-phase__first__content img:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.event-phase__first__name{
+    padding-left: 20px;
+    height: 50px;
+    width: 140px;
+    padding-top: 8px;
+}
+
+.event-phase__first__name >h1{
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.event-phase__first__name >h1:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.event-phase__first__social{
+    display: flex;
+    height: 20px;
+    justify-content: space-evenly;
+    margin-left: 66px;
+    font-size: 15px;
+}
+
+.event-phase__first__social i:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.event-phase__first__choice{
+    display: flex;
+    justify-content: space-between;
+}
+
+.event-phase__first__fl{
+    height: 26px;
+    width:80px;
+    border: 1px solid #ccc;
+    border-radius: 13px;
+    text-align: center;
+    padding-top: 8px;
+    background-color: #377DFF;
+    color: white;
+    font-size: 13px;
+    margin: 24px 0px 18px 18px;
+}
+
+.event-phase__first__ex{
+    margin: 24px 18px 18px 0px;
+    height: 26px;
+    width:80px;
+    border: 1px solid #ccc;
+    border-radius: 13px;
+    text-align: center;
+    padding-top: 8px;
+    font-size: 13px;
+}
+
+.event-phase__first__ex:hover{
+    cursor: pointer;
+    background-color: #ccc;
+}
+
+.event-phase__first__fl:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.event-phase__second{
+    margin-top: 30px;
+    background-color: white;
+    height: 348px;
+    border-radius: 13px;
+}
+
+.event-phase__second__head{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    height: 44px;
+    align-items: center;
+    padding: 0 20px 0 20px;
+}
+
+.event-phase__second__head >h1{
+    font-weight: 600;
+    color: #333;
+    font-size: 12px;
+}
+
+.event-phase__second__head >i{
+    font-size: 14px;
+}
+.event-phase__second__head >i:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.event-phase__second__content1{
+    width: 238px;
+    height: 124px;
+    background-color: #F6F7F8;
+    margin: 20px 18px 20px 18px;
+    border-radius: 13px;
+    // display: flex;
+}
+
+.event-phase__second__content1 img{
+    width: 40px;
+    height: 40px;
+    // padding: 18px 0 0 10px;
+}
+
+.event-phase__second__contentname1{
+    height: 44px;
+    padding-top: 18px;
+    width: 140px;
+    padding-left: 10px;
+    display: flex;
+}
+
+.event-phase__name1{
+    width: 150px;
+    height: 40px;
+    padding-left: 28px;
+}
+
+.event-phase__name1>h1{
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.event-phase__second__content1__view{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+.event-phase__second__content1__view>h1 {
+    padding-left: 10px;
+}
+
+.event-phase__view{
+    margin-top: 16px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+    color: #AFB6C2;
+    padding-right: 30px;
+}
+
+.event-phase__list-seen1{
+    display: flex;
+    flex: 1;
+}
+
+.event__list-seen__avatar{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    overflow: hidden;
+        img {
+            object-fit: cover;
+        }
+}
+
+.event__list-seen__avatar:not(:first-child) {
+    margin-left: -6px;
+    box-shadow: 0 0 0 1px #fff;
+}
+
+.event__list-seen__avatar--over-seen {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #545a67;
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 2px;
+    line-height: 20px;
+}
+
+
+
+
