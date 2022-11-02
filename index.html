@@ -374,7 +374,7 @@
                                     <i class="post-actions__btn__icon fa-light fa-heart"></i>
                                     <span class="post-actions__btn__label">Thích</span>
                                 </div>
-                                <div class="see-comments post-actions__btn post-actions__comment-btn">
+                                <div class="see-comments post-actions__btn post-actions__comment-btn see-comments">
                                     <i class="post-actions__btn__icon fa-light fa-comment"></i>
                                     <span class="post-actions__btn__label">Bình luận</span>
                                 </div>
@@ -386,7 +386,7 @@
                             <div class="post-comments">
                                 <div class="post-comments__shows">
                                     <span class="post-comments__shows__title high-light">Bình luận nổi bật</span>
-                                    <span class="post-comments__shows__title see-comments">Tất cả bình
+                                    <span class="post-comments__shows__title see-comments see-comments">Tất cả bình
                                         luận</span>
                                 </div>
                                 <div class="post-comments__list">
@@ -485,113 +485,225 @@
                         </div>
                     </div>
                     <div class="event-phase">
-                        <!-- <h4>event</h4> -->
-                        <div class="event-phase__first">
-                            <div class="event-phase__first__head">
-                                <h3>Có thể bạn thích</h3>
-                                <h2>Tất cả</h2>
-                            </div>
-                            <div class="event-phase__first__content">
-                                <img src="./assets/images/anhdep.jpg" alt="">
-                                <div class="event-phase__first__name">
-                                    <h1>Harry Max Guy</h1>
-                                    <h2>Founder & CEO Gánh Xiếc</h2>
-                                </div>
-                            </div>
-                            <div class="event-phase__first__social">
-                                <i class="fa-solid fa-earth-asia"></i>
-                                <i class="fa-brands fa-facebook"></i>
-                                <i class="fa-brands fa-instagram"></i>
-                                <i class="fa-brands fa-twitter"></i>
-                            </div>
-                            <div class="event-phase__first__choice">
-                                <span class="event-phase__first__fl">Theo dõi</span>
-                                <span class="event-phase__first__ex">Bỏ qua</span>
-                            </div>
-                        </div>
-
-                        <div class="event-phase__second">
-                            <div class="event-phase__second__head">
-                                <h1>Sự kiện</h1>
-                                <i class="fa-solid fa-ellipsis"></i>
-                            </div>
-                            <div class="event-phase__second__content1">
-                                
-                                <div class="event-phase__second__contentname1">
-                                    <img src="./assets/images/anhdep1.png" alt="">
-                                    <div class="event-phase__name1">
-                                        <h1>PGL Major Antwerp 2022</h1>
-                                        <h2 style="width:150px">Giải vô địch Major Counter-Strike: Global Offensive ...</h2>
-                                    </div>
-                                    
-                                    
-                                </div>
-                                <div class="event-phase__second__content1__view">
-                                    <h1>1000 đã xem</h1>
-                                    <div class="event-phase__view">
-                                        <div class="event-phase__list-seen1">
-                                            <div class="event__list-seen__avatar">
-                                                <img src="https://images.pexels.com/photos/2582937/pexels-photo-2582937.jpeg?auto=compress&cs=tinysrgb&w=1600"
-                                                    alt="">
-                                            </div>
-                                            <div class="event__list-seen__avatar">
-                                                <img src="https://images.pexels.com/photos/699459/pexels-photo-699459.jpeg?auto=compress&cs=tinysrgb&w=1600"
-                                                    alt="">
-                                            </div>
-                                            <div class="event__list-seen__avatar">
-                                                <img src="https://images.pexels.com/photos/3568520/pexels-photo-3568520.jpeg?auto=compress&cs=tinysrgb&w=1600"
-                                                    alt="">
-                                            </div>
-                                            <div class="event__list-seen__avatar event__list-seen__avatar--over-seen ">
-                                                997+
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-
-                            <div class="event-phase__second__content1">
-                                
-                                <div class="event-phase__second__contentname1">
-                                    <img src="./assets/images/anhdep1.png" alt="">
-                                    <div class="event-phase__name1">
-                                        <h1>PGL Major Antwerp 2022</h1>
-                                        <h2 style="width:150px">Giải vô địch Major Counter-Strike: Global Offensive ...</h2>
-                                    </div>
-                                    
-                                    
-                                </div>
-                                <div class="event-phase__second__content1__view">
-                                    <h1>1000 đã xem</h1>
-                                    <div class="event-phase__view">
-                                        <div class="event-phase__list-seen1">
-                                            <div class="event__list-seen__avatar">
-                                                <img src="https://images.pexels.com/photos/2582937/pexels-photo-2582937.jpeg?auto=compress&cs=tinysrgb&w=1600"
-                                                    alt="">
-                                            </div>
-                                            <div class="event__list-seen__avatar">
-                                                <img src="https://images.pexels.com/photos/699459/pexels-photo-699459.jpeg?auto=compress&cs=tinysrgb&w=1600"
-                                                    alt="">
-                                            </div>
-                                            <div class="event__list-seen__avatar">
-                                                <img src="https://images.pexels.com/photos/3568520/pexels-photo-3568520.jpeg?auto=compress&cs=tinysrgb&w=1600"
-                                                    alt="">
-                                            </div>
-                                            <div class="event__list-seen__avatar event__list-seen__avatar--over-seen ">
-                                                997+
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                            
-                        </div>
+                        <h4>event</h4>
                     </div>
                 </div>
                 <div class="right-sidebar activebar">
-                    <h4>Right side bar</h4>
+                    <div class="right-sidebar__search-phase">
+                        <input type="text" placeholder="Tìm kiếm bạn bè..." class="search-friends">
+                    </div>
+                    <div class="story-container">
+                        <div class="right-sidebar__story-list">
+                            <div class="story-list__items">
+                                <div class="story-item">
+                                    <div class="story-item__avatar">
+                                        <img src="https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                                            alt="">
+                                    </div>
+                                    <span class="story-item__account-name">Anh Đức</span>
+                                </div>
+                                <div class="story-item">
+                                    <div class="story-item__avatar">
+                                        <img src="https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                                            alt="">
+                                    </div>
+                                    <span class="story-item__account-name">Anh Đức</span>
+                                </div>
+                                <div class="story-item">
+                                    <div class="story-item__avatar">
+                                        <img src="https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                                            alt="">
+                                    </div>
+                                    <span class="story-item__account-name">Anh Đức</span>
+                                </div>
+                                <div class="story-item">
+                                    <div class="story-item__avatar">
+                                        <img src="https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                                            alt="">
+                                    </div>
+                                    <span class="story-item__account-name">Anh Đức</span>
+                                </div>
+                                <div class="story-item">
+                                    <div class="story-item__avatar">
+                                        <img src="https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                                            alt="">
+                                    </div>
+                                    <span class="story-item__account-name">Anh Đức</span>
+                                </div>
+                                <div class="story-item">
+                                    <div class="story-item__avatar">
+                                        <img src="https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                                            alt="">
+                                    </div>
+                                    <span class="story-item__account-name">Anh Đức</span>
+                                </div>
+                                <div class="story-item">
+                                    <div class="story-item__avatar">
+                                        <img src="https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                                            alt="">
+                                    </div>
+                                    <span class="story-item__account-name">Anh Đức</span>
+                                </div>
+                                <div class="story-item">
+                                    <div class="story-item__avatar">
+                                        <img src="https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                                            alt="">
+                                    </div>
+                                    <span class="story-item__account-name">Anh Đức</span>
+                                </div>
+                                <div class="story-item">
+                                    <div class="story-item__avatar">
+                                        <img src="https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                                            alt="">
+                                    </div>
+                                    <span class="story-item__account-name">Anh Đức</span>
+                                </div>
+                            </div>
+                            <div class="story-list__load-more">
+                                <i class="fa-light fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-sidebar__friends-container">
+                        <div class="friends-container__title">
+                            <span>Bạn bè</span>
+                            <i class="friends-action__btn fa-solid fa-ellipsis"></i>
+                        </div>
+                        <div class="friends-container__friend-list">
+                            <div class="friend-list__item">
+                                <div class="friend-list__item__info">
+                                    <div class="list-item__info__avatar">
+                                        <img src="https://images.pexels.com/photos/3082341/pexels-photo-3082341.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                                            alt="">
+                                    </div>
+                                    <a href="#" class="list-item__info__acount-name">Nguyễn Anh Tuấn</a>
+                                </div>
+                                <div class="friend-list__item__active-status online">
+                                    <i class="fa-solid fa-circle"></i>
+                                </div>
+                            </div>
+                            <div class="friend-list__item">
+                                <div class="friend-list__item__info">
+                                    <div class="list-item__info__avatar">
+                                        <img src="https://images.pexels.com/photos/3082341/pexels-photo-3082341.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                                            alt="">
+                                    </div>
+                                    <a href="#" class="list-item__info__acount-name">Nguyễn Anh Tuấn</a>
+                                </div>
+                                <div class="friend-list__item__active-status online">
+                                    <i class="fa-solid fa-circle"></i>
+                                </div>
+                            </div>
+                            <div class="friend-list__item">
+                                <div class="friend-list__item__info">
+                                    <div class="list-item__info__avatar">
+                                        <img src="https://images.pexels.com/photos/3082341/pexels-photo-3082341.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                                            alt="">
+                                    </div>
+                                    <a href="#" class="list-item__info__acount-name">Nguyễn Anh Tuấn</a>
+                                </div>
+                                <div class="friend-list__item__active-status online">
+                                    <i class="fa-solid fa-circle"></i>
+                                </div>
+                            </div>
+                            <div class="friend-list__item">
+                                <div class="friend-list__item__info">
+                                    <div class="list-item__info__avatar">
+                                        <img src="https://images.pexels.com/photos/3082341/pexels-photo-3082341.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                                            alt="">
+                                    </div>
+                                    <a href="#" class="list-item__info__acount-name">Nguyễn Anh Tuấn</a>
+                                </div>
+                                <div class="friend-list__item__active-status online">
+                                    <i class="fa-solid fa-circle"></i>
+                                </div>
+                            </div>
+                            <div class="friend-list__item">
+                                <div class="friend-list__item__info">
+                                    <div class="list-item__info__avatar">
+                                        <img src="https://images.pexels.com/photos/3082341/pexels-photo-3082341.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                                            alt="">
+                                    </div>
+                                    <a href="#" class="list-item__info__acount-name">Nguyễn Anh Tuấn</a>
+                                </div>
+                                <div class="friend-list__item__active-status online">
+                                    <i class="fa-solid fa-circle"></i>
+                                </div>
+                            </div>
+                            <div class="friend-list__item">
+                                <div class="friend-list__item__info">
+                                    <div class="list-item__info__avatar">
+                                        <img src="https://images.pexels.com/photos/3082341/pexels-photo-3082341.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                                            alt="">
+                                    </div>
+                                    <a href="#" class="list-item__info__acount-name">Nguyễn Anh Tuấn</a>
+                                </div>
+                                <div class="friend-list__item__active-status online">
+                                    <i class="fa-solid fa-circle"></i>
+                                </div>
+                            </div>
+                            <div class="friend-list__item">
+                                <div class="friend-list__item__info">
+                                    <div class="list-item__info__avatar">
+                                        <img src="https://images.pexels.com/photos/3082341/pexels-photo-3082341.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                                            alt="">
+                                    </div>
+                                    <a href="#" class="list-item__info__acount-name">Nguyễn Anh Tuấn</a>
+                                </div>
+                                <div class="friend-list__item__active-status online">
+                                    <i class="fa-solid fa-circle"></i>
+                                </div>
+                            </div>
+                            <div class="friend-list__item">
+                                <div class="friend-list__item__info">
+                                    <div class="list-item__info__avatar">
+                                        <img src="https://images.pexels.com/photos/3082341/pexels-photo-3082341.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                                            alt="">
+                                    </div>
+                                    <a href="#" class="list-item__info__acount-name">Nguyễn Anh Tuấn</a>
+                                </div>
+                                <div class="friend-list__item__active-status online">
+                                    <i class="fa-solid fa-circle"></i>
+                                </div>
+                            </div>
+                            <div class="friend-list__item">
+                                <div class="friend-list__item__info">
+                                    <div class="list-item__info__avatar">
+                                        <img src="https://images.pexels.com/photos/3082341/pexels-photo-3082341.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                                            alt="">
+                                    </div>
+                                    <a href="#" class="list-item__info__acount-name">Nguyễn Anh Tuấn</a>
+                                </div>
+                                <div class="friend-list__item__active-status online">
+                                    <i class="fa-solid fa-circle"></i>
+                                </div>
+                            </div>
+                            <div class="friend-list__item">
+                                <div class="friend-list__item__info">
+                                    <div class="list-item__info__avatar">
+                                        <img src="https://images.pexels.com/photos/3082341/pexels-photo-3082341.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                                            alt="">
+                                    </div>
+                                    <a href="#" class="list-item__info__acount-name">Nguyễn Anh Tuấn</a>
+                                </div>
+                                <div class="friend-list__item__active-status online">
+                                    <i class="fa-solid fa-circle"></i>
+                                </div>
+                            </div>
+                            <div class="friend-list__item">
+                                <div class="friend-list__item__info">
+                                    <div class="list-item__info__avatar">
+                                        <img src="https://images.pexels.com/photos/3082341/pexels-photo-3082341.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                                            alt="">
+                                    </div>
+                                    <a href="#" class="list-item__info__acount-name">Nguyễn Anh Tuấn</a>
+                                </div>
+                                <div class="friend-list__item__active-status online">
+                                    <i class="fa-solid fa-circle"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -797,7 +909,10 @@
                     </div>
                 </div>
             </div>
+            <div class="new-post__modal">
+            </div>
         </div>
+    </div>
     </div>
     <script src="./assets/javascript/index.js"></script>
 </body>

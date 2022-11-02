@@ -148,6 +148,153 @@
   width: 20%;
   bottom: 0;
   flex-basis: 20%;
+  overflow: auto;
+}
+.right-sidebar::-webkit-scrollbar {
+  display: none;
+}
+
+.right-sidebar__search-phase {
+  margin-bottom: 24px;
+}
+
+.search-friends {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 8px 16px;
+  border-radius: 16px;
+  border: 1px solid #e0e0e0;
+  color: #757575;
+  font-size: 1.4rem;
+}
+
+.right-sidebar__story-list {
+  position: relative;
+  overflow: auto;
+}
+.right-sidebar__story-list::-webkit-scrollbar {
+  display: none;
+}
+
+.story-list__items {
+  display: flex;
+  gap: 20px;
+}
+
+.story-item {
+  position: relative;
+}
+
+.story-item__avatar {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+.story-item__avatar > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.story-item__avatar::after {
+  content: "+";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%);
+  display: block;
+  width: 10px;
+  height: 10px;
+  padding: 2px;
+  text-align: center;
+  line-height: 12px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 0 0 1px #e0e0e0;
+}
+
+.story-item__account-name {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+  font-size: 1.2rem;
+  color: #4d5d78;
+}
+
+.story-list__load-more {
+  position: absolute;
+  right: 0;
+  top: 20%;
+  background-color: #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.friends-container__title {
+  display: flex;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #4d5d78;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.friends-action__btn {
+  display: block;
+  padding: 4px;
+  cursor: pointer;
+  font-size: 1.8rem;
+}
+
+.friends-container__friend-list {
+  position: relative;
+  font-size: 1.6rem;
+  overflow: auto;
+}
+
+.friend-list__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  font-weight: 500;
+}
+
+.friend-list__item__info {
+  display: flex;
+  align-items: center;
+}
+
+.list-item__info__avatar {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 16px;
+  object-fit: cover;
+}
+.list-item__info__avatar > img {
+  width: 100%;
+  height: 100%;
+}
+
+.friend-list__item__active-status {
+  font-size: 1.2rem;
+  margin-right: 20px;
+}
+
+.online {
+  color: #1da318;
 }
 
 .main-content {
@@ -763,7 +910,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5019607843);
   z-index: 200;
   display: none;
 }
