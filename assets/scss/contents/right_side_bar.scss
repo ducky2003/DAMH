@@ -1,4 +1,8 @@
 .right-sidebar {
+    @include devicesResponsive(1024px) {
+        display: none;
+    }
+
     position: fixed;
     top: 72px;
     right: 16px;
@@ -6,6 +10,8 @@
     bottom: 0;
     flex-basis: 20%;
     overflow: auto;
+    box-sizing: border-box;
+    padding: 0 12px;
 
     &::-webkit-scrollbar {
         display: none;
@@ -141,6 +147,7 @@
 }
 
 .list-item__info__avatar {
+    flex-shrink: 0;
     width: 46px;
     height: 46px;
     border-radius: 50%;

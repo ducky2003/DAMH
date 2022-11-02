@@ -35,6 +35,11 @@
   align-items: center;
   justify-content: space-between;
 }
+@media screen and (max-width: 1024px) {
+  .first-phase {
+    flex-basis: 80%;
+  }
+}
 
 .header__logo-phase {
   flex: 1;
@@ -106,8 +111,15 @@
   user-select: none;
   z-index: 100;
 }
+@media screen and (max-width: 1024px) {
+  .left-sidebar {
+    flex-basis: 40%;
+  }
+}
 
 .navbar-items {
+  display: flex;
+  flex-direction: column;
   padding: 16px;
   padding-left: 0;
   list-style: none;
@@ -119,6 +131,7 @@
 }
 
 .navbar__item {
+  flex-shrink: 0;
   font-size: 1.4rem;
   border-radius: 8px;
   color: #4d5d78;
@@ -141,6 +154,12 @@
   width: 32px;
 }
 
+@media screen and (max-width: 1368px) {
+  .item__content__title {
+    font-size: 1.1rem;
+  }
+}
+
 .right-sidebar {
   position: fixed;
   top: 72px;
@@ -149,6 +168,13 @@
   bottom: 0;
   flex-basis: 20%;
   overflow: auto;
+  box-sizing: border-box;
+  padding: 0 12px;
+}
+@media screen and (max-width: 1024px) {
+  .right-sidebar {
+    display: none;
+  }
 }
 .right-sidebar::-webkit-scrollbar {
   display: none;
@@ -276,6 +302,7 @@
 }
 
 .list-item__info__avatar {
+  flex-shrink: 0;
   width: 46px;
   height: 46px;
   border-radius: 50%;
@@ -298,14 +325,19 @@
 }
 
 .main-content {
-  margin-left: 13%;
   flex-basis: 60%;
+  margin-left: 13%;
   padding: 32px;
   padding-bottom: 0;
   background-color: #F9FAFB;
   border-radius: 16px;
   display: flex;
   gap: 32px;
+}
+@media screen and (max-width: 1024px) {
+  .main-content {
+    flex-basis: 100%;
+  }
 }
 .main-content .feed-phase {
   flex: 2;
@@ -315,6 +347,7 @@
   display: flex;
   align-items: center;
   gap: 16px;
+  box-sizing: border-box;
 }
 .feed-phase__new-post .new-post__box .new-post__box__avatar {
   width: 48px;
@@ -349,8 +382,10 @@
   background-color: #F9FAFB;
 }
 .feed-phase__new-post .list-button__button {
-  padding: 10px 24px;
+  flex-shrink: 0;
+  padding: 10px 20px;
   border-radius: 10px;
+  box-sizing: border-box;
 }
 .feed-phase__new-post .list-button__button .button-icon {
   margin-right: 8px;
@@ -633,25 +668,30 @@
 .event-phase {
   flex: 1;
 }
+@media screen and (max-width: 1368px) {
+  .event-phase {
+    display: none;
+  }
+}
 
 .event-phase__first {
   background-color: #fff;
-  width: 236px;
-  height: 220px;
-  border-radius: 13px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
 }
 
 .event-phase__first__head {
   height: 44px;
-  width: 236px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid rgba(175, 182, 194, 0.8431372549);
+  font-size: 1.4rem;
+  font-weight: 500;
 }
 
 .event-phase__first__head > h2 {
-  font-weight: 600;
   color: #6198FF;
   padding-right: 20px;
 }
@@ -662,7 +702,6 @@
 }
 
 .event-phase__first__head > h3 {
-  font-weight: 500;
   color: #333;
   padding-left: 20px;
 }
@@ -670,6 +709,7 @@
 .event-phase__first__content {
   margin: 20px 20px 0 20px;
   display: flex;
+  align-items: center;
 }
 
 .event-phase__first__content img {
@@ -684,10 +724,7 @@
 }
 
 .event-phase__first__name {
-  padding-left: 20px;
-  height: 50px;
-  width: 140px;
-  padding-top: 8px;
+  margin-left: 20px;
 }
 
 .event-phase__first__name > h1 {
@@ -702,9 +739,9 @@
 
 .event-phase__first__social {
   display: flex;
+  justify-content: center;
+  gap: 16px;
   height: 20px;
-  justify-content: space-evenly;
-  margin-left: 66px;
   font-size: 15px;
 }
 
@@ -715,12 +752,12 @@
 
 .event-phase__first__choice {
   display: flex;
-  justify-content: space-between;
+  gap: 20px;
 }
 
 .event-phase__first__fl {
+  flex: 1;
   height: 26px;
-  width: 80px;
   border: 1px solid #ccc;
   border-radius: 13px;
   text-align: center;
@@ -732,9 +769,9 @@
 }
 
 .event-phase__first__ex {
+  flex: 1;
   margin: 24px 18px 18px 0px;
   height: 26px;
-  width: 80px;
   border: 1px solid #ccc;
   border-radius: 13px;
   text-align: center;
@@ -762,7 +799,7 @@
 .event-phase__second__head {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid rgba(175, 182, 194, 0.8431372549);
   height: 44px;
   align-items: center;
   padding: 0 20px 0 20px;
@@ -784,7 +821,6 @@
 }
 
 .event-phase__second__content1 {
-  width: 238px;
   height: 124px;
   background-color: #F6F7F8;
   margin: 20px 18px 20px 18px;

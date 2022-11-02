@@ -1,6 +1,13 @@
+@import "../common/_mixins";
+
 .main-content {
-    margin-left: 13%;
+    @include devicesResponsive(1024px) {
+        flex-basis: 100%;
+    }
+
+
     flex-basis: 60%;
+    margin-left: 13%;
     padding: 32px;
     padding-bottom: 0;
     background-color: #F9FAFB;
@@ -36,6 +43,8 @@
             border: none;
             font-size: 1.4rem;
         }
+
+        box-sizing: border-box;
     }
 
     .new-post__list-button {
@@ -62,8 +71,10 @@
     }
 
     .list-button__button {
-        padding: 10px 24px;
+        flex-shrink: 0;
+        padding: 10px 20px;
         border-radius: 10px;
+        box-sizing: border-box;
 
         .button-icon {
             margin-right: 8px;
@@ -416,97 +427,98 @@
 }
 
 .event-phase {
+    @include devicesResponsive(1368px) {
+        display: none;
+    }
+
     flex: 1;
 }
 
-.event-phase__first{
+.event-phase__first {
     background-color: #fff;
-    width: 236px;
-    height: 220px;
-    border-radius: 13px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
 }
 
-.event-phase__first__head{
+.event-phase__first__head {
     height: 44px;
-    width: 236px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #afb6c2d7;
+    font-size: 1.4rem;
+    font-weight: 500;
 }
 
-.event-phase__first__head >h2{
-    font-weight: 600;
+.event-phase__first__head>h2 {
     color: #6198FF;
     padding-right: 20px;
 }
 
-.event-phase__first__head >h2:hover{
+.event-phase__first__head>h2:hover {
     opacity: 0.8;
     cursor: pointer;
 }
 
-.event-phase__first__head >h3{
-    font-weight: 500;
+.event-phase__first__head>h3 {
     color: #333;
     padding-left: 20px;
 }
 
-.event-phase__first__content{
+.event-phase__first__content {
     margin: 20px 20px 0 20px;
     display: flex;
+    align-items: center;
 }
 
-.event-phase__first__content img{
+.event-phase__first__content img {
     border-radius: 50%;
     width: 50px;
     height: 50px;
     // margin: 20px;
 }
 
-.event-phase__first__content img:hover{
+.event-phase__first__content img:hover {
     opacity: 0.8;
     cursor: pointer;
 }
 
-.event-phase__first__name{
-    padding-left: 20px;
-    height: 50px;
-    width: 140px;
-    padding-top: 8px;
+.event-phase__first__name {
+    margin-left: 20px;
 }
 
-.event-phase__first__name >h1{
+.event-phase__first__name>h1 {
     font-weight: 600;
     font-size: 14px;
 }
 
-.event-phase__first__name >h1:hover{
+.event-phase__first__name>h1:hover {
     opacity: 0.7;
     cursor: pointer;
 }
 
-.event-phase__first__social{
+.event-phase__first__social {
     display: flex;
+    justify-content: center;
+    gap: 16px;
     height: 20px;
-    justify-content: space-evenly;
-    margin-left: 66px;
     font-size: 15px;
 }
 
-.event-phase__first__social i:hover{
+.event-phase__first__social i:hover {
     cursor: pointer;
     opacity: 0.8;
 }
 
-.event-phase__first__choice{
+.event-phase__first__choice {
     display: flex;
-    justify-content: space-between;
+    gap: 20px;
 }
 
-.event-phase__first__fl{
+.event-phase__first__fl {
+    flex: 1;
     height: 26px;
-    width:80px;
     border: 1px solid #ccc;
     border-radius: 13px;
     text-align: center;
@@ -517,10 +529,10 @@
     margin: 24px 0px 18px 18px;
 }
 
-.event-phase__first__ex{
+.event-phase__first__ex {
+    flex: 1;
     margin: 24px 18px 18px 0px;
     height: 26px;
-    width:80px;
     border: 1px solid #ccc;
     border-radius: 13px;
     text-align: center;
@@ -528,48 +540,49 @@
     font-size: 13px;
 }
 
-.event-phase__first__ex:hover{
+.event-phase__first__ex:hover {
     cursor: pointer;
     background-color: #ccc;
 }
 
-.event-phase__first__fl:hover{
+.event-phase__first__fl:hover {
     cursor: pointer;
     opacity: 0.8;
 }
 
-.event-phase__second{
+.event-phase__second {
     margin-top: 30px;
     background-color: white;
     height: 348px;
     border-radius: 13px;
 }
 
-.event-phase__second__head{
+.event-phase__second__head {
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #afb6c2d7;
     height: 44px;
     align-items: center;
     padding: 0 20px 0 20px;
 }
 
-.event-phase__second__head >h1{
+.event-phase__second__head>h1 {
     font-weight: 600;
     color: #333;
     font-size: 12px;
 }
 
-.event-phase__second__head >i{
+.event-phase__second__head>i {
     font-size: 14px;
 }
-.event-phase__second__head >i:hover{
+
+.event-phase__second__head>i:hover {
     opacity: 0.8;
     cursor: pointer;
 }
 
-.event-phase__second__content1{
-    width: 238px;
+.event-phase__second__content1 {
+    // width: 238px;
     height: 124px;
     background-color: #F6F7F8;
     margin: 20px 18px 20px 18px;
@@ -577,13 +590,13 @@
     // display: flex;
 }
 
-.event-phase__second__content1 img{
+.event-phase__second__content1 img {
     width: 40px;
     height: 40px;
     // padding: 18px 0 0 10px;
 }
 
-.event-phase__second__contentname1{
+.event-phase__second__contentname1 {
     height: 44px;
     padding-top: 18px;
     width: 140px;
@@ -591,18 +604,18 @@
     display: flex;
 }
 
-.event-phase__name1{
+.event-phase__name1 {
     width: 150px;
     height: 40px;
     padding-left: 28px;
 }
 
-.event-phase__name1>h1{
+.event-phase__name1>h1 {
     font-weight: 600;
     font-size: 12px;
 }
 
-.event-phase__second__content1__view{
+.event-phase__second__content1__view {
     display: flex;
     align-items: center;
     margin-top: 10px;
@@ -613,7 +626,7 @@
     padding-left: 10px;
 }
 
-.event-phase__view{
+.event-phase__view {
     margin-top: 16px;
     margin-bottom: 16px;
     display: flex;
@@ -623,19 +636,20 @@
     padding-right: 30px;
 }
 
-.event-phase__list-seen1{
+.event-phase__list-seen1 {
     display: flex;
     flex: 1;
 }
 
-.event__list-seen__avatar{
+.event__list-seen__avatar {
     width: 24px;
     height: 24px;
     border-radius: 50%;
     overflow: hidden;
-        img {
-            object-fit: cover;
-        }
+
+    img {
+        object-fit: cover;
+    }
 }
 
 .event__list-seen__avatar:not(:first-child) {
@@ -653,7 +667,3 @@
     padding: 2px;
     line-height: 20px;
 }
-
-
-
-
