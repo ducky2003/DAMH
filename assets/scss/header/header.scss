@@ -8,10 +8,25 @@
     right: 0;
     left: 0;
     z-index: 100;
-    height: 40px;
     padding: 16px 0;
     background-color: #fff;
+
+    .mobile-header {
+        display: none;
+    }
+
+    @include devicesResponsive(768px) {
+        .desktop-header {
+            display: none;
+        }
+
+        .mobile-header {
+            display: flex;
+        }
+    }
+
 }
+
 
 .header-container {
     color: $primary-color;
@@ -74,15 +89,26 @@
     .user-phase__avatar {
         width: 36px;
         height: 36px;
-        border-radius: 10px;
+        border-radius: 50%;
         overflow: hidden;
         margin: 0 16px;
     }
 
     .user-phase__name {
+        @include devicesResponsive(768px) {
+            display: none;
+        }
+
         font-weight: 700;
         font-size: 1.6rem;
         color: $primary-color;
 
     }
+}
+
+.message-phase {
+    color: $primary-color;
+    font-size: 2.4rem;
+    padding: 0 16px;
+
 }

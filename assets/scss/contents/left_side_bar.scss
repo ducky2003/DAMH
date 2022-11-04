@@ -4,12 +4,22 @@
 
 .left-sidebar {
     @include devicesResponsive(1024px) {
-        flex-basis: 40%;
+        flex-basis: 10%;
+        width: 10%;
+    }
+
+    @include devicesResponsive(768px) {
+        width: 100%;
+        top: calc(100% - 72px);
+        right: 0;
+        left: 0;
+
     }
 
     position: fixed;
     top: 72px;
     left: 16px;
+    z-index: 20;
     bottom: 0;
     background-color: #fff;
     width: 13%;
@@ -19,8 +29,13 @@
 }
 
 .navbar-items {
-    display: flex;
-    flex-direction: column;
+    @include devicesResponsive(768px) {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        padding: 8px;
+    }
+
     padding: 16px;
     padding-left: 0;
     list-style: none;
@@ -33,7 +48,22 @@
 }
 
 .navbar__item {
-    flex-shrink: 0;
+    position: relative;
+
+    @include devicesResponsive(768px) {
+        &:nth-child(3) {
+            display: none;
+        }
+
+        &:nth-child(6) {
+            display: none;
+        }
+
+        &:last-child {
+            display: none;
+        }
+    }
+
     font-size: 1.4rem;
     border-radius: 8px;
     color: $primary-color;
@@ -41,17 +71,51 @@
     padding: 10px 16px;
 }
 
+
 .navbar__item.active {
+    @include devicesResponsive(768px) {
+        background-color: #fff;
+        color: $primary-color;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50%;
+            height: 4px;
+            background-color: $primary-color;
+            border-radius: 8px;
+        }
+    }
+
     color: #fff;
     background-color: #4E5D78;
 }
 
+
 .item__content {
+    @include devicesResponsive(768px) {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @include devicesResponsive(1024px) {
+        justify-content: center;
+    }
+
     display: flex;
     align-items: center;
 }
 
 .item__content__icon {
+    @include devicesResponsive(768px) {
+        font-size: 1.8rem;
+        margin-bottom: 4px;
+    }
+
+    text-align: center;
     display: block;
     width: 32px;
 }
@@ -61,4 +125,15 @@
         font-size: 1.1rem;
     }
 
+    @include devicesResponsive(1024px) {
+        display: none;
+    }
+
+    @include devicesResponsive(768px) {
+        display: block;
+    }
+
+    @include devicesResponsive(376px) {
+        font-size: .8rem;
+    }
 }

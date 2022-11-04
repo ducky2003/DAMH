@@ -1,16 +1,17 @@
 .right-sidebar {
     @include devicesResponsive(1024px) {
         display: none;
+        padding: 0;
     }
 
     position: fixed;
-    top: 72px;
+    margin-top: 20px;
+    top: 78px;
     right: 16px;
     width: 20%;
     bottom: 0;
-    flex-basis: 20%;
+    background-color: #fff;
     overflow: auto;
-    box-sizing: border-box;
     padding: 0 12px;
 
     &::-webkit-scrollbar {
@@ -129,7 +130,7 @@
 
 .friends-container__friend-list {
     position: relative;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     overflow: auto;
 }
 
