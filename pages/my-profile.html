@@ -6,36 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ZeeZii</title>
-    <link rel="shortcut icon" href="./assets/images/icons/favi.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/images/icons/favi.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="../assets/fonts/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
 <body>
     <div id="app">
         <div id="header" class="pd-l-r-16">
-            <div class="mobile-header header-container">
-                <div class="header__user-phase">
-                    <div class="user-phase__avatar">
-                        <img src="./assets/images/icons/avatar.jpg" alt="Avatar">
-                    </div>
-                </div>
-                <div class="header__search-phase">
-                    <i class="search-phase__search-icon fa-regular fa-magnifying-glass"></i>
-                    <input type="search" class="search-phase__search-bar" placeholder="Tìm kiếm tại đây...">
-                </div>
-                <div class="message-phase">
-                    <i class="fa-light fa-message-lines"></i>
-                </div>
-            </div>
-            <div class="desktop-header header-container">
+            <div class="header-container">
                 <div class="first-phase">
                     <div class="header__logo-phase">
                         <a class="logo-phase__image" href="#">
-                            <img src="./assets/images/icons/logo.png" alt="ZeeZii">
+                            <img src="../assets/images/icons/logo.png" alt="ZeeZii">
                         </a>
                     </div>
                     <div class="header__search-phase">
@@ -44,9 +30,9 @@
                     </div>
                 </div>
                 <div class="header__user-phase">
-                    <h4 class="user-phase__name">Tuấn Nguyễn</h4>
+                    <h4 class="user-phase__name">Đức Nguyễn</h4>
                     <div class="user-phase__avatar">
-                        <img src="./assets/images/icons/avatar.jpg" alt="Avatar">
+                        <img src="../assets/images/avt.jpg" alt="Avatar">
                     </div>
                 </div>
             </div>
@@ -55,7 +41,7 @@
             <div class="content-container">
                 <div class="left-sidebar navbar">
                     <ul class="navbar-items">
-                        <li class="navbar__item active">
+                        <li class="navbar__item">
                             <a href="/" class="item__content">
                                 <i class="item__content__icon fa-regular fa-grid-2"></i>
                                 <span class="item__content__title">Trang chủ</span>
@@ -85,8 +71,8 @@
                                 <span class="item__content__title">Kết nối</span>
                             </a>
                         </li>
-                        <li class="navbar__item">
-                            <a href="./pages/my-profile.html" class="item__content">
+                        <li class="navbar__item active">
+                            <a href="./my-profile.html" class="item__content">
                                 <i class="item__content__icon fa-light fa-circle-user"></i>
                                 <span class="item__content__title">Trang cá nhân</span>
                             </a>
@@ -105,12 +91,101 @@
                         </li>
                     </ul>
                 </div>
+                <div class="profile__main-content">
+                    <div class="profile__cover-photo">
+                        <div class="profile__cover-photo__edit">
+                            <i class="fa-light fa-cloud-arrow-up"></i>
+                            <p>Chỉnh sửa ảnh bìa</p>
+                        </div>
+                    </div>
+                    <input type="file" name="image" id="image" accept="image/*" />
+                    <div class="profile__avatar">
+                        <div class="profile__avatar__image" id="avatar"></div>
+                        <button id="upload-button" aria-labelledby="image" aria-describedby="image">
+                            <i class="fa-light fa-cloud-arrow-up"
+                                style="transform: translate3d(-11px, -14px, 10px);font-size: 18px"></i>
+                        </button>
+                    </div>
+                    <div class="profile__main-avatar__name">
+                        <h1 style="font-weight: 600; font-size: 24px;">Đức Nguyễn</h1>
+                        <h3 style="font-size: 15px; font-weight: 300">Ahihi...</h3>
+                    </div>
+                    <div class="profile__main-bio__change">
+                        <i class="fa-light fa-eye"></i>
+                        <div class="profile__main-bio__change-btn">
+                            <p>Chỉnh sửa thông tin</p>
+                        </div>
+                    </div>
+                </div>
                 <div class="main-content">
+                    <div class="infor-phase">
+                        <div class="infor-phase__head">
+                            <h1>Thông Tin</h1>
+                        </div>
+                        <div class="infor-phase__item">
+                            <i class="fa-solid fa-earth-asia" style="width:34px; height:24px; padding-right:20px"></i>
+                            <div class="infor-phase__item-name">
+                                <a href="https://www.facebook.com/profile.php?id=100039846127594">myprofile.com</a>
+                            </div>
+                        </div>
+                        <div class="infor-phase__item">
+                            <i class="fa-light fa-user" style="width:34px; height:24px; padding-right:20px"></i>
+                            <div class="infor-phase__item-name">
+                                <a href="">Nam</a>
+                            </div>
+                        </div>
+                        <div class="infor-phase__item">
+                            <i class="fa-light fa-calendar-days"
+                                style="width:34px; height:24px; padding-right:20px"></i>
+                            <div class="infor-phase__item-name">
+                                <a href="">Ngày 1, Tháng 1, Năm 2003</a>
+                            </div>
+                        </div>
+                        <div class="infor-phase__item">
+                            <i class="fa-light fa-location-dot" style="width:34px; height:24px; padding-right:20px"></i>
+                            <div class="infor-phase__item-name">
+                                <a
+                                    href="https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+h%E1%BB%8Dc+Vinh/@18.6590487,105.693561,17z/data=!3m1!4b1!4m5!3m4!1s0x3139cddf0bf20f23:0x86154b56a284fa6d!8m2!3d18.6590436!4d105.6957497?hl=vi-VN">Nghệ
+                                    An, Việt Nam</a>
+                            </div>
+                        </div>
+                        <div class="infor-phase__item">
+                            <i class="fa-brands fa-facebook" style="width:34px; height:24px; padding-right:20px"></i>
+                            <div class="infor-phase__item-name">
+                                <a href="https://www.facebook.com/profile.php?id=100039846127594">Duc Nguyen</a>
+                            </div>
+                        </div>
+                        <div class="infor-phase__item">
+                            <i class="fa-brands fa-instagram" style="width:34px; height:24px; padding-right:20px"></i>
+                            <div class="infor-phase__item-name">
+                                <a href="">ducnguyen_14</a>
+                            </div>
+                        </div>
+                        <div class="infor-phase__item">
+                            <i class="fa-brands fa-twitter" style="width:34px; height:24px; padding-right:20px"></i>
+                            <div class="infor-phase__item-name">
+                                <a href="">ducnavi14</a>
+                            </div>
+                        </div>
+                        <div class="infor-phase__item">
+                            <div class="infor-phase__item-name">
+                                <p>1412 người theo dõi</p>
+                            </div>
+                        </div>
+                        <div class="infor-phase__item">
+                            <div class="infor-phase__item-name">
+                                <p>1975 đang theo dõi</p>
+                            </div>
+                        </div>
+                        <div class="infor-phase__change">
+                            <p>Chỉnh Sửa Thông Tin Cá Nhân</p>
+                        </div>
+                    </div>
                     <div class="feed-phase">
                         <div class="feed-phase__new-post post-container">
                             <div class="new-post__box">
                                 <div class="new-post__box__avatar">
-                                    <img src="./assets/images/icons/avatar.jpg" alt="avatar">
+                                    <img src="../assets/images/avt.jpg" alt="avatar">
                                 </div>
                                 <input type="text" class="new-post__box__status" placeholder="Suy nghĩ của bạn...">
                             </div>
@@ -136,11 +211,11 @@
                             <div class="post-header">
                                 <div class="post-header__info">
                                     <div class="post-header__info__avatar">
-                                        <img src="./assets/images/icons/avatar.jpg" alt="avatar">
+                                        <img src="../assets/images/avt.jpg" alt="avatar">
                                     </div>
                                     <div class="post-header__info__author">
-                                        <h4 class="post-header__info__author__name">Tuấn Nguyễn</h4>
-                                        <span class="post-header__info__author__time">3 giờ
+                                        <h4 class="post-header__info__author__name">Đức Nguyễn</h4>
+                                        <span class="post-header__info__author__time">5 giờ
                                             <span class="post-header__info__author__privacy">Công khai</span>
                                         </span>
                                     </div>
@@ -151,33 +226,27 @@
                             </div>
                             <div class="post-content">
                                 <p class="post-content__description">
-                                    Chào mừng ngày phụ nữ Việt Nam, Kính mời quý vị và các bạn đến với chương trình văn
-                                    nghệ của chúng tôi!
+                                    Beautifull!!!!!!!!!!!!!!!!!!!!
                                 </p>
                                 <div class="post-content__images">
                                     <div class="post-content__images__image">
-                                        <img src="https://images.pexels.com/photos/2330137/pexels-photo-2330137.jpeg?auto=compress&cs=tinysrgb&w=1600"
-                                            alt="20/10">
+                                        <img src="../assets/images/anhbia.jpg" alt="Ảnh">
                                     </div>
                                     <div class="post-content__images__image">
-                                        <img src="https://images.pexels.com/photos/3861959/pexels-photo-3861959.jpeg?auto=compress&cs=tinysrgb&w=1600"
-                                            alt="20/10">
+                                        <img src="../assets/images/anhbia.jpg" alt="Ảnh">
                                     </div>
                                     <div class="post-content__images__image">
-                                        <img src="https://images.pexels.com/photos/3987110/pexels-photo-3987110.jpeg?auto=compress&cs=tinysrgb&w=1600"
-                                            alt="20/10">
+                                        <img src="../assets/images/anhbia.jpg" alt="Ảnh">
                                     </div>
                                     <div class="post-content__images__image">
-                                        <img src="https://images.pexels.com/photos/1181673/pexels-photo-1181673.jpeg?auto=compress&cs=tinysrgb&w=1600"
-                                            alt="20/10">
+                                        <img src="../assets/images/anhbia.jpg" alt="Ảnh">
                                     </div>
                                 </div>
                             </div>
                             <div class="post-response">
                                 <div class="post-response__list-seen">
                                     <div class="list-seen__avatar">
-                                        <img src="https://images.pexels.com/photos/2582937/pexels-photo-2582937.jpeg?auto=compress&cs=tinysrgb&w=1600"
-                                            alt="">
+                                        <img src="../assets/images/avt.jpg" alt="">
                                     </div>
                                     <div class="list-seen__avatar">
                                         <img src="https://images.pexels.com/photos/699459/pexels-photo-699459.jpeg?auto=compress&cs=tinysrgb&w=1600"
@@ -225,13 +294,12 @@
                                         <div class="post-comments__comment">
                                             <div class="comment-header">
                                                 <div class="post-comment__info__avatar">
-                                                    <img src="https://images.pexels.com/photos/3987110/pexels-photo-3987110.jpeg?auto=compress&cs=tinysrgb&w=1600"
-                                                        alt="avatar">
+                                                    <img src="../assets/images/anhdep3.jpg" alt="avatar">
                                                 </div>
                                                 <div class="post-comment__content">
                                                     <div class="post-comment__content__author">
-                                                        <p class="post-comment__content__author__name">Quân Đặng</p>
-                                                        <span class="post-comment__content__author__time">6 giờ truóc
+                                                        <p class="post-comment__content__author__name">Anh Đặng</p>
+                                                        <span class="post-comment__content__author__time">1 giờ truóc
                                                         </span>
                                                     </div>
                                                     <p class="post-comment__content__description">
@@ -249,13 +317,12 @@
                                         <div class="post-comments__comment">
                                             <div class="comment-header">
                                                 <div class="post-comment__info__avatar">
-                                                    <img src="https://images.pexels.com/photos/3987110/pexels-photo-3987110.jpeg?auto=compress&cs=tinysrgb&w=1600"
-                                                        alt="avatar">
+                                                    <img src="../assets/images/anhdep3.jpg" alt="avatar">
                                                 </div>
                                                 <div class="post-comment__content">
                                                     <div class="post-comment__content__author">
-                                                        <p class="post-comment__content__author__name">Quân Đặng</p>
-                                                        <span class="post-comment__content__author__time">6 giờ truóc
+                                                        <p class="post-comment__content__author__name">Anh Đặng</p>
+                                                        <span class="post-comment__content__author__time">1 giờ truóc
                                                         </span>
                                                     </div>
                                                     <p class="post-comment__content__description">
@@ -272,13 +339,12 @@
                                         <div class="post-comments__comment">
                                             <div class="comment-header">
                                                 <div class="post-comment__info__avatar">
-                                                    <img src="https://images.pexels.com/photos/3987110/pexels-photo-3987110.jpeg?auto=compress&cs=tinysrgb&w=1600"
-                                                        alt="avatar">
+                                                    <img src="../assets/images/anhdep3.jpg" alt="avatar">
                                                 </div>
                                                 <div class="post-comment__content">
                                                     <div class="post-comment__content__author">
-                                                        <p class="post-comment__content__author__name">Quân Đặng</p>
-                                                        <span class="post-comment__content__author__time">6 giờ truóc
+                                                        <p class="post-comment__content__author__name">Anh Đặng</p>
+                                                        <span class="post-comment__content__author__time">1 giờ truóc
                                                         </span>
                                                     </div>
                                                     <p class="post-comment__content__description">
@@ -293,11 +359,32 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="post-comments__comment-container">
+                                        <div class="post-comments__comment">
+                                            <div class="comment-header">
+                                                <div class="post-comment__info__avatar">
+                                                    <img src="../assets/images/avt.jpg" alt="avatar">
+                                                </div>
+                                                <div class="post-comment__content">
+                                                    <div class="post-comment__content__author">
+                                                        <p class="post-comment__content__author__name">Đức Nguyễn</p>
+                                                        <span class="post-comment__content__author__time">1 giờ truóc
+                                                        </span>
+                                                    </div>
+                                                    <p class="post-comment__content__description">
+                                                        Liên quan?
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="comment-action">
+                                                <i class="comment-action__btn fa-solid fa-ellipsis"></i>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="post-comment__write-comment">
                                     <div class="write-comment__avatar">
-                                        <img src="https://images.pexels.com/photos/3987110/pexels-photo-3987110.jpeg?auto=compress&cs=tinysrgb&w=1600"
-                                            alt="avatar">
+                                        <img src="../assets/images/avt.jpg" alt="avatar">
                                     </div>
                                     <div class="write-comment__type">
                                         <input type="text" class="write-comment__type__input"
@@ -319,11 +406,11 @@
                             <div class="post-header">
                                 <div class="post-header__info">
                                     <div class="post-header__info__avatar">
-                                        <img src="./assets/images/icons/avatar.jpg" alt="avatar">
+                                        <img src="../assets/images/avt.jpg" alt="avatar">
                                     </div>
                                     <div class="post-header__info__author">
-                                        <h4 class="post-header__info__author__name">Tuấn Nguyễn</h4>
-                                        <span class="post-header__info__author__time">3 giờ
+                                        <h4 class="post-header__info__author__name">Đức Nguyễn</h4>
+                                        <span class="post-header__info__author__time">5 giờ
                                             <span class="post-header__info__author__privacy">Công khai</span>
                                         </span>
                                     </div>
@@ -334,13 +421,11 @@
                             </div>
                             <div class="post-content">
                                 <p class="post-content__description">
-                                    Chào mừng ngày phụ nữ Việt Nam, Kính mời quý vị và các bạn đến với chương trình văn
-                                    nghệ của chúng tôi!
+                                    ... hehe
                                 </p>
                                 <div class="post-content__images">
                                     <div class="post-content__images__image">
-                                        <img src="https://images.pexels.com/photos/2330137/pexels-photo-2330137.jpeg?auto=compress&cs=tinysrgb&w=1600"
-                                            alt="20/10">
+                                        <img src="../assets/images/anhbia2.jpg" alt="Ảnh">
                                     </div>
                                     <div class="post-content__images__image">
                                         <img src="https://images.pexels.com/photos/3861959/pexels-photo-3861959.jpeg?auto=compress&cs=tinysrgb&w=1600"
@@ -408,13 +493,12 @@
                                         <div class="post-comments__comment">
                                             <div class="comment-header">
                                                 <div class="post-comment__info__avatar">
-                                                    <img src="https://images.pexels.com/photos/3987110/pexels-photo-3987110.jpeg?auto=compress&cs=tinysrgb&w=1600"
-                                                        alt="avatar">
+                                                    <img src="../assets/images/anhdep3.jpg" alt="avatar">
                                                 </div>
                                                 <div class="post-comment__content">
                                                     <div class="post-comment__content__author">
-                                                        <p class="post-comment__content__author__name">Quân Đặng</p>
-                                                        <span class="post-comment__content__author__time">6 giờ truóc
+                                                        <p class="post-comment__content__author__name">Anh Đặng</p>
+                                                        <span class="post-comment__content__author__time">1 giờ trư
                                                         </span>
                                                     </div>
                                                     <p class="post-comment__content__description">
@@ -432,13 +516,12 @@
                                         <div class="post-comments__comment">
                                             <div class="comment-header">
                                                 <div class="post-comment__info__avatar">
-                                                    <img src="https://images.pexels.com/photos/3987110/pexels-photo-3987110.jpeg?auto=compress&cs=tinysrgb&w=1600"
-                                                        alt="avatar">
+                                                    <img src="../assets/images/anhdep3.jpg" alt="avatar">
                                                 </div>
                                                 <div class="post-comment__content">
                                                     <div class="post-comment__content__author">
-                                                        <p class="post-comment__content__author__name">Quân Đặng</p>
-                                                        <span class="post-comment__content__author__time">6 giờ truóc
+                                                        <p class="post-comment__content__author__name">Anh Đặng</p>
+                                                        <span class="post-comment__content__author__time">1 giờ trư
                                                         </span>
                                                     </div>
                                                     <p class="post-comment__content__description">
@@ -455,13 +538,12 @@
                                         <div class="post-comments__comment">
                                             <div class="comment-header">
                                                 <div class="post-comment__info__avatar">
-                                                    <img src="https://images.pexels.com/photos/3987110/pexels-photo-3987110.jpeg?auto=compress&cs=tinysrgb&w=1600"
-                                                        alt="avatar">
+                                                    <img src="../assets/images/anhdep3.jpg" alt="avatar">
                                                 </div>
                                                 <div class="post-comment__content">
                                                     <div class="post-comment__content__author">
-                                                        <p class="post-comment__content__author__name">Quân Đặng</p>
-                                                        <span class="post-comment__content__author__time">6 giờ truóc
+                                                        <p class="post-comment__content__author__name">Anh Đặng</p>
+                                                        <span class="post-comment__content__author__time">1 giờ trư
                                                         </span>
                                                     </div>
                                                     <p class="post-comment__content__description">
@@ -505,7 +587,7 @@
                                 <h2>Tất cả</h2>
                             </div>
                             <div class="event-phase__first__content">
-                                <img src="./assets/images/anhdep.jpg" alt="">
+                                <img src="../assets/images/anhdep.jpg" alt="">
                                 <div class="event-phase__first__name">
                                     <h1>Harry Max Guy</h1>
                                     <h2>Founder & CEO Gánh Xiếc</h2>
@@ -529,7 +611,7 @@
                             </div>
                             <div class="event-phase__second__content1">
                                 <div class="event-phase__second__contentname1">
-                                    <img src="./assets/images/anhdep1.png" alt="">
+                                    <img src="../assets/images/anhdep1.png" alt="">
                                     <div class="event-phase__name1">
                                         <h1>PGL Major Antwerp 2022</h1>
                                         <h2 style="width:150px">Giải vô địch Major Counter-Strike: Global Offensive ...
@@ -561,7 +643,7 @@
                             </div>
                             <div class="event-phase__second__content1">
                                 <div class="event-phase__second__contentname1">
-                                    <img src="./assets/images/anhdep1.png" alt="">
+                                    <img src="../assets/images/anhdep1.png" alt="">
                                     <div class="event-phase__name1">
                                         <h1>PGL Major Antwerp 2022</h1>
                                         <h2 style="width:150px">Giải vô địch Major Counter-Strike: Global Offensive ...
@@ -594,433 +676,229 @@
                         </div>
                     </div>
                 </div>
-                <div class="right-sidebar activebar">
-                    <div class="right-sidebar__search-phase">
-                        <input type="text" placeholder="Tìm kiếm bạn bè..." class="search-friends">
-                    </div>
-                    <div class="story-container">
-                        <div class="right-sidebar__story-list">
-                            <div class="story-list__items">
-                                <div class="story-item">
-                                    <div class="story-item__avatar">
-                                        <img src="https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=1600"
-                                            alt="">
+            </div>
+        </div>
+        <div id="modal">
+            <div class="modal-container">
+                <div class="comment-modal">
+                    <div class="comment-modal__container">
+                        <div class="comment-modal__header">
+                            <i class="comment-modal__header__close-btn fa-regular fa-xmark"></i>
+                            <h2 class="comment-modal__header__title">Bình luận</h2>
+                        </div>
+                        <div class="post-comments__list">
+                            <div class="post-comments__comment-container">
+                                <div class="post-comments__comment">
+                                    <div class="comment-header">
+                                        <div class="post-comment__info__avatar">
+                                            <img src="../assets/images/anhdep3.jpg" alt="avatar">
+                                        </div>
+                                        <div class="post-comment__content">
+                                            <div class="post-comment__content__author">
+                                                <p class="post-comment__content__author__name">Anh Đặng</p>
+                                                <span class="post-comment__content__author__time">1 giờ trư
+                                                </span>
+                                            </div>
+                                            <p class="post-comment__content__description">
+                                                Công nghệ thông tin là một nhánh ngành kỹ thuật sử dụng máy
+                                                tính.
+                                            </p>
+                                        </div>
                                     </div>
-                                    <span class="story-item__account-name">Anh Đức</span>
-                                </div>
-                                <div class="story-item">
-                                    <div class="story-item__avatar">
-                                        <img src="https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=1600"
-                                            alt="">
+                                    <div class="comment-action">
+                                        <i class="comment-action__btn fa-solid fa-ellipsis"></i>
                                     </div>
-                                    <span class="story-item__account-name">Anh Đức</span>
-                                </div>
-                                <div class="story-item">
-                                    <div class="story-item__avatar">
-                                        <img src="https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=1600"
-                                            alt="">
-                                    </div>
-                                    <span class="story-item__account-name">Anh Đức</span>
-                                </div>
-                                <div class="story-item">
-                                    <div class="story-item__avatar">
-                                        <img src="https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=1600"
-                                            alt="">
-                                    </div>
-                                    <span class="story-item__account-name">Anh Đức</span>
-                                </div>
-                                <div class="story-item">
-                                    <div class="story-item__avatar">
-                                        <img src="https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=1600"
-                                            alt="">
-                                    </div>
-                                    <span class="story-item__account-name">Anh Đức</span>
-                                </div>
-                                <div class="story-item">
-                                    <div class="story-item__avatar">
-                                        <img src="https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=1600"
-                                            alt="">
-                                    </div>
-                                    <span class="story-item__account-name">Anh Đức</span>
-                                </div>
-                                <div class="story-item">
-                                    <div class="story-item__avatar">
-                                        <img src="https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=1600"
-                                            alt="">
-                                    </div>
-                                    <span class="story-item__account-name">Anh Đức</span>
-                                </div>
-                                <div class="story-item">
-                                    <div class="story-item__avatar">
-                                        <img src="https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=1600"
-                                            alt="">
-                                    </div>
-                                    <span class="story-item__account-name">Anh Đức</span>
-                                </div>
-                                <div class="story-item">
-                                    <div class="story-item__avatar">
-                                        <img src="https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=1600"
-                                            alt="">
-                                    </div>
-                                    <span class="story-item__account-name">Anh Đức</span>
                                 </div>
                             </div>
-                            <div class="story-list__load-more">
-                                <i class="fa-light fa-arrow-right"></i>
+                            <div class="post-comments__comment-container">
+                                <div class="post-comments__comment">
+                                    <div class="comment-header">
+                                        <div class="post-comment__info__avatar">
+                                            <img src="../assets/images/anhdep3.jpg" alt="avatar">
+                                        </div>
+                                        <div class="post-comment__content">
+                                            <div class="post-comment__content__author">
+                                                <p class="post-comment__content__author__name">Anh Đặng</p>
+                                                <span class="post-comment__content__author__time">1 giờ trư
+                                                </span>
+                                            </div>
+                                            <p class="post-comment__content__description">
+                                                Với mức lương cao hơn mặt bằng chung
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="comment-action">
+                                        <i class="comment-action__btn fa-solid fa-ellipsis"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="post-comments__comment-container">
+                                <div class="post-comments__comment">
+                                    <div class="comment-header">
+                                        <div class="post-comment__info__avatar">
+                                            <img src="../assets/images/anhdep3.jpg" alt="avatar">
+                                        </div>
+                                        <div class="post-comment__content">
+                                            <div class="post-comment__content__author">
+                                                <p class="post-comment__content__author__name">Anh Đặng</p>
+                                                <span class="post-comment__content__author__time">1 giờ trư
+                                                </span>
+                                            </div>
+                                            <p class="post-comment__content__description">
+                                                Và công nghệ thực tế là mình học là của nước ngoài nên nếu bạn
+                                                có chứng chỉ quốc tế, chứng chỉ từ nhà phát hành công nghệ thì
+                                                nó còn có giá trị cao hơn cả bằng cấp bạn lấy được ở Việt Nam.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="comment-action">
+                                        <i class="comment-action__btn fa-solid fa-ellipsis"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="post-comments__comment-container">
+                                <div class="post-comments__comment">
+                                    <div class="comment-header">
+                                        <div class="post-comment__info__avatar">
+                                            <img src="../assets/images/anhdep3.jpg" alt="avatar">
+                                        </div>
+                                        <div class="post-comment__content">
+                                            <div class="post-comment__content__author">
+                                                <p class="post-comment__content__author__name">Anh Đặng</p>
+                                                <span class="post-comment__content__author__time">1 giờ trư
+                                                </span>
+                                            </div>
+                                            <p class="post-comment__content__description">
+                                                Và công nghệ thực tế là mình học là của nước ngoài nên nếu bạn
+                                                có chứng chỉ quốc tế, chứng chỉ từ nhà phát hành công nghệ thì
+                                                nó còn có giá trị cao hơn cả bằng cấp bạn lấy được ở Việt Nam.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="comment-action">
+                                        <i class="comment-action__btn fa-solid fa-ellipsis"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="post-comments__comment-container">
+                                <div class="post-comments__comment">
+                                    <div class="comment-header">
+                                        <div class="post-comment__info__avatar">
+                                            <img src="../assets/images/anhdep3.jpg" alt="avatar">
+                                        </div>
+                                        <div class="post-comment__content">
+                                            <div class="post-comment__content__author">
+                                                <p class="post-comment__content__author__name">Anh Đặng</p>
+                                                <span class="post-comment__content__author__time">1 giờ trư
+                                                </span>
+                                            </div>
+                                            <p class="post-comment__content__description">
+                                                Và công nghệ thực tế là mình học là của nước ngoài nên nếu bạn
+                                                có chứng chỉ quốc tế, chứng chỉ từ nhà phát hành công nghệ thì
+                                                nó còn có giá trị cao hơn cả bằng cấp bạn lấy được ở Việt Nam.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="comment-action">
+                                        <i class="comment-action__btn fa-solid fa-ellipsis"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="post-comments__comment-container">
+                                <div class="post-comments__comment">
+                                    <div class="comment-header">
+                                        <div class="post-comment__info__avatar">
+                                            <img src="../assets/images/anhdep3.jpg" alt="avatar">
+                                        </div>
+                                        <div class="post-comment__content">
+                                            <div class="post-comment__content__author">
+                                                <p class="post-comment__content__author__name">Anh Đặng</p>
+                                                <span class="post-comment__content__author__time">1 giờ trư
+                                                </span>
+                                            </div>
+                                            <p class="post-comment__content__description">
+                                                Và công nghệ thực tế là mình học là của nước ngoài nên nếu bạn
+                                                có chứng chỉ quốc tế, chứng chỉ từ nhà phát hành công nghệ thì
+                                                nó còn có giá trị cao hơn cả bằng cấp bạn lấy được ở Việt Nam.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="comment-action">
+                                        <i class="comment-action__btn fa-solid fa-ellipsis"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="post-comments__comment-container">
+                                <div class="post-comments__comment">
+                                    <div class="comment-header">
+                                        <div class="post-comment__info__avatar">
+                                            <img src="../assets/images/anhdep3.jpg" alt="avatar">
+                                        </div>
+                                        <div class="post-comment__content">
+                                            <div class="post-comment__content__author">
+                                                <p class="post-comment__content__author__name">Anh Đặng</p>
+                                                <span class="post-comment__content__author__time">1 giờ trư
+                                                </span>
+                                            </div>
+                                            <p class="post-comment__content__description">
+                                                Và công nghệ thực tế là mình học là của nước ngoài nên nếu bạn
+                                                có chứng chỉ quốc tế, chứng chỉ từ nhà phát hành công nghệ thì
+                                                nó còn có giá trị cao hơn cả bằng cấp bạn lấy được ở Việt Nam.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="comment-action">
+                                        <i class="comment-action__btn fa-solid fa-ellipsis"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="post-comments__comment-container">
+                                <div class="post-comments__comment">
+                                    <div class="comment-header">
+                                        <div class="post-comment__info__avatar">
+                                            <img src="../assets/images/avt.jpg" alt="avatar">
+                                        </div>
+                                        <div class="post-comment__content">
+                                            <div class="post-comment__content__author">
+                                                <p class="post-comment__content__author__name">Đức Nguyễn</p>
+                                                <span class="post-comment__content__author__time">1 giờ trư
+                                                </span>
+                                            </div>
+                                            <p class="post-comment__content__description">
+                                                Liên quan?
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="comment-action">
+                                        <i class="comment-action__btn fa-solid fa-ellipsis"></i>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="right-sidebar__friends-container">
-                        <div class="friends-container__title">
-                            <span>Bạn bè</span>
-                            <i class="friends-action__btn fa-solid fa-ellipsis"></i>
-                        </div>
-                        <div class="friends-container__friend-list">
-                            <div class="friend-list__item">
-                                <div class="friend-list__item__info">
-                                    <div class="list-item__info__avatar">
-                                        <img src="https://images.pexels.com/photos/3082341/pexels-photo-3082341.jpeg?auto=compress&cs=tinysrgb&w=1600"
-                                            alt="">
-                                    </div>
-                                    <a href="#" class="list-item__info__acount-name">Nguyễn Anh Tuấn</a>
-                                </div>
-                                <div class="friend-list__item__active-status online">
-                                    <i class="fa-solid fa-circle"></i>
+                        <div class="post-comment__write-comment">
+                            <div class="write-comment__avatar">
+                                <img src="../assets/images/anhdep3.jpg" alt="avatar">
+                            </div>
+                            <div class="write-comment__type">
+                                <input type="text" class="write-comment__type__input" placeholder="Viết bình luận...">
+                                <div class="write-comment__type__media">
+                                    <i class="media__gif fa-light fa-gif"></i>
+                                    <i class="media__image fa-light fa-image-landscape"></i>
+                                    <i class="media__emoji fa-light fa-face-smile-beam"></i>
                                 </div>
                             </div>
-                            <div class="friend-list__item">
-                                <div class="friend-list__item__info">
-                                    <div class="list-item__info__avatar">
-                                        <img src="https://images.pexels.com/photos/3082341/pexels-photo-3082341.jpeg?auto=compress&cs=tinysrgb&w=1600"
-                                            alt="">
-                                    </div>
-                                    <a href="#" class="list-item__info__acount-name">Nguyễn Anh Tuấn</a>
-                                </div>
-                                <div class="friend-list__item__active-status online">
-                                    <i class="fa-solid fa-circle"></i>
-                                </div>
-                            </div>
-                            <div class="friend-list__item">
-                                <div class="friend-list__item__info">
-                                    <div class="list-item__info__avatar">
-                                        <img src="https://images.pexels.com/photos/3082341/pexels-photo-3082341.jpeg?auto=compress&cs=tinysrgb&w=1600"
-                                            alt="">
-                                    </div>
-                                    <a href="#" class="list-item__info__acount-name">Nguyễn Anh Tuấn</a>
-                                </div>
-                                <div class="friend-list__item__active-status online">
-                                    <i class="fa-solid fa-circle"></i>
-                                </div>
-                            </div>
-                            <div class="friend-list__item">
-                                <div class="friend-list__item__info">
-                                    <div class="list-item__info__avatar">
-                                        <img src="https://images.pexels.com/photos/3082341/pexels-photo-3082341.jpeg?auto=compress&cs=tinysrgb&w=1600"
-                                            alt="">
-                                    </div>
-                                    <a href="#" class="list-item__info__acount-name">Nguyễn Anh Tuấn</a>
-                                </div>
-                                <div class="friend-list__item__active-status online">
-                                    <i class="fa-solid fa-circle"></i>
-                                </div>
-                            </div>
-                            <div class="friend-list__item">
-                                <div class="friend-list__item__info">
-                                    <div class="list-item__info__avatar">
-                                        <img src="https://images.pexels.com/photos/3082341/pexels-photo-3082341.jpeg?auto=compress&cs=tinysrgb&w=1600"
-                                            alt="">
-                                    </div>
-                                    <a href="#" class="list-item__info__acount-name">Nguyễn Anh Tuấn</a>
-                                </div>
-                                <div class="friend-list__item__active-status online">
-                                    <i class="fa-solid fa-circle"></i>
-                                </div>
-                            </div>
-                            <div class="friend-list__item">
-                                <div class="friend-list__item__info">
-                                    <div class="list-item__info__avatar">
-                                        <img src="https://images.pexels.com/photos/3082341/pexels-photo-3082341.jpeg?auto=compress&cs=tinysrgb&w=1600"
-                                            alt="">
-                                    </div>
-                                    <a href="#" class="list-item__info__acount-name">Nguyễn Anh Tuấn</a>
-                                </div>
-                                <div class="friend-list__item__active-status online">
-                                    <i class="fa-solid fa-circle"></i>
-                                </div>
-                            </div>
-                            <div class="friend-list__item">
-                                <div class="friend-list__item__info">
-                                    <div class="list-item__info__avatar">
-                                        <img src="https://images.pexels.com/photos/3082341/pexels-photo-3082341.jpeg?auto=compress&cs=tinysrgb&w=1600"
-                                            alt="">
-                                    </div>
-                                    <a href="#" class="list-item__info__acount-name">Nguyễn Anh Tuấn</a>
-                                </div>
-                                <div class="friend-list__item__active-status online">
-                                    <i class="fa-solid fa-circle"></i>
-                                </div>
-                            </div>
-                            <div class="friend-list__item">
-                                <div class="friend-list__item__info">
-                                    <div class="list-item__info__avatar">
-                                        <img src="https://images.pexels.com/photos/3082341/pexels-photo-3082341.jpeg?auto=compress&cs=tinysrgb&w=1600"
-                                            alt="">
-                                    </div>
-                                    <a href="#" class="list-item__info__acount-name">Nguyễn Anh Tuấn</a>
-                                </div>
-                                <div class="friend-list__item__active-status online">
-                                    <i class="fa-solid fa-circle"></i>
-                                </div>
-                            </div>
-                            <div class="friend-list__item">
-                                <div class="friend-list__item__info">
-                                    <div class="list-item__info__avatar">
-                                        <img src="https://images.pexels.com/photos/3082341/pexels-photo-3082341.jpeg?auto=compress&cs=tinysrgb&w=1600"
-                                            alt="">
-                                    </div>
-                                    <a href="#" class="list-item__info__acount-name">Nguyễn Anh Tuấn</a>
-                                </div>
-                                <div class="friend-list__item__active-status online">
-                                    <i class="fa-solid fa-circle"></i>
-                                </div>
-                            </div>
-                            <div class="friend-list__item">
-                                <div class="friend-list__item__info">
-                                    <div class="list-item__info__avatar">
-                                        <img src="https://images.pexels.com/photos/3082341/pexels-photo-3082341.jpeg?auto=compress&cs=tinysrgb&w=1600"
-                                            alt="">
-                                    </div>
-                                    <a href="#" class="list-item__info__acount-name">Nguyễn Anh Tuấn</a>
-                                </div>
-                                <div class="friend-list__item__active-status online">
-                                    <i class="fa-solid fa-circle"></i>
-                                </div>
-                            </div>
-                            <div class="friend-list__item">
-                                <div class="friend-list__item__info">
-                                    <div class="list-item__info__avatar">
-                                        <img src="https://images.pexels.com/photos/3082341/pexels-photo-3082341.jpeg?auto=compress&cs=tinysrgb&w=1600"
-                                            alt="">
-                                    </div>
-                                    <a href="#" class="list-item__info__acount-name">Nguyễn Anh Tuấn</a>
-                                </div>
-                                <div class="friend-list__item__active-status online">
-                                    <i class="fa-solid fa-circle"></i>
-                                </div>
+                            <div class="write-comment__sent-btn">
+                                <i class="sent-btn__icon fa-solid fa-paper-plane-top"></i>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-    <div id="modal">
-        <div class="modal-container">
-            <div class="comment-modal">
-                <div class="comment-modal__container">
-                    <div class="comment-modal__header">
-                        <i class="comment-modal__header__close-btn fa-regular fa-xmark"></i>
-                        <h2 class="comment-modal__header__title">Bình luận</h2>
-                    </div>
-                    <div class="post-comments__list">
-                        <div class="post-comments__comment-container">
-                            <div class="post-comments__comment">
-                                <div class="comment-header">
-                                    <div class="post-comment__info__avatar">
-                                        <img src="https://images.pexels.com/photos/3987110/pexels-photo-3987110.jpeg?auto=compress&cs=tinysrgb&w=1600"
-                                            alt="avatar">
-                                    </div>
-                                    <div class="post-comment__content">
-                                        <div class="post-comment__content__author">
-                                            <p class="post-comment__content__author__name">Quân Đặng</p>
-                                            <span class="post-comment__content__author__time">6 giờ truóc
-                                            </span>
-                                        </div>
-                                        <p class="post-comment__content__description">
-                                            Công nghệ thông tin là một nhánh ngành kỹ thuật sử dụng máy
-                                            tính.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="comment-action">
-                                    <i class="comment-action__btn fa-solid fa-ellipsis"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="post-comments__comment-container">
-                            <div class="post-comments__comment">
-                                <div class="comment-header">
-                                    <div class="post-comment__info__avatar">
-                                        <img src="https://images.pexels.com/photos/3987110/pexels-photo-3987110.jpeg?auto=compress&cs=tinysrgb&w=1600"
-                                            alt="avatar">
-                                    </div>
-                                    <div class="post-comment__content">
-                                        <div class="post-comment__content__author">
-                                            <p class="post-comment__content__author__name">Quân Đặng</p>
-                                            <span class="post-comment__content__author__time">6 giờ truóc
-                                            </span>
-                                        </div>
-                                        <p class="post-comment__content__description">
-                                            Với mức lương cao hơn mặt bằng chung
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="comment-action">
-                                    <i class="comment-action__btn fa-solid fa-ellipsis"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="post-comments__comment-container">
-                            <div class="post-comments__comment">
-                                <div class="comment-header">
-                                    <div class="post-comment__info__avatar">
-                                        <img src="https://images.pexels.com/photos/3987110/pexels-photo-3987110.jpeg?auto=compress&cs=tinysrgb&w=1600"
-                                            alt="avatar">
-                                    </div>
-                                    <div class="post-comment__content">
-                                        <div class="post-comment__content__author">
-                                            <p class="post-comment__content__author__name">Quân Đặng</p>
-                                            <span class="post-comment__content__author__time">6 giờ truóc
-                                            </span>
-                                        </div>
-                                        <p class="post-comment__content__description">
-                                            Và công nghệ thực tế là mình học là của nước ngoài nên nếu bạn
-                                            có chứng chỉ quốc tế, chứng chỉ từ nhà phát hành công nghệ thì
-                                            nó còn có giá trị cao hơn cả bằng cấp bạn lấy được ở Việt Nam.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="comment-action">
-                                    <i class="comment-action__btn fa-solid fa-ellipsis"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="post-comments__comment-container">
-                            <div class="post-comments__comment">
-                                <div class="comment-header">
-                                    <div class="post-comment__info__avatar">
-                                        <img src="https://images.pexels.com/photos/3987110/pexels-photo-3987110.jpeg?auto=compress&cs=tinysrgb&w=1600"
-                                            alt="avatar">
-                                    </div>
-                                    <div class="post-comment__content">
-                                        <div class="post-comment__content__author">
-                                            <p class="post-comment__content__author__name">Quân Đặng</p>
-                                            <span class="post-comment__content__author__time">6 giờ truóc
-                                            </span>
-                                        </div>
-                                        <p class="post-comment__content__description">
-                                            Và công nghệ thực tế là mình học là của nước ngoài nên nếu bạn
-                                            có chứng chỉ quốc tế, chứng chỉ từ nhà phát hành công nghệ thì
-                                            nó còn có giá trị cao hơn cả bằng cấp bạn lấy được ở Việt Nam.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="comment-action">
-                                    <i class="comment-action__btn fa-solid fa-ellipsis"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="post-comments__comment-container">
-                            <div class="post-comments__comment">
-                                <div class="comment-header">
-                                    <div class="post-comment__info__avatar">
-                                        <img src="https://images.pexels.com/photos/3987110/pexels-photo-3987110.jpeg?auto=compress&cs=tinysrgb&w=1600"
-                                            alt="avatar">
-                                    </div>
-                                    <div class="post-comment__content">
-                                        <div class="post-comment__content__author">
-                                            <p class="post-comment__content__author__name">Quân Đặng</p>
-                                            <span class="post-comment__content__author__time">6 giờ truóc
-                                            </span>
-                                        </div>
-                                        <p class="post-comment__content__description">
-                                            Và công nghệ thực tế là mình học là của nước ngoài nên nếu bạn
-                                            có chứng chỉ quốc tế, chứng chỉ từ nhà phát hành công nghệ thì
-                                            nó còn có giá trị cao hơn cả bằng cấp bạn lấy được ở Việt Nam.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="comment-action">
-                                    <i class="comment-action__btn fa-solid fa-ellipsis"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="post-comments__comment-container">
-                            <div class="post-comments__comment">
-                                <div class="comment-header">
-                                    <div class="post-comment__info__avatar">
-                                        <img src="https://images.pexels.com/photos/3987110/pexels-photo-3987110.jpeg?auto=compress&cs=tinysrgb&w=1600"
-                                            alt="avatar">
-                                    </div>
-                                    <div class="post-comment__content">
-                                        <div class="post-comment__content__author">
-                                            <p class="post-comment__content__author__name">Quân Đặng</p>
-                                            <span class="post-comment__content__author__time">6 giờ truóc
-                                            </span>
-                                        </div>
-                                        <p class="post-comment__content__description">
-                                            Và công nghệ thực tế là mình học là của nước ngoài nên nếu bạn
-                                            có chứng chỉ quốc tế, chứng chỉ từ nhà phát hành công nghệ thì
-                                            nó còn có giá trị cao hơn cả bằng cấp bạn lấy được ở Việt Nam.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="comment-action">
-                                    <i class="comment-action__btn fa-solid fa-ellipsis"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="post-comments__comment-container">
-                            <div class="post-comments__comment">
-                                <div class="comment-header">
-                                    <div class="post-comment__info__avatar">
-                                        <img src="https://images.pexels.com/photos/3987110/pexels-photo-3987110.jpeg?auto=compress&cs=tinysrgb&w=1600"
-                                            alt="avatar">
-                                    </div>
-                                    <div class="post-comment__content">
-                                        <div class="post-comment__content__author">
-                                            <p class="post-comment__content__author__name">Quân Đặng</p>
-                                            <span class="post-comment__content__author__time">6 giờ truóc
-                                            </span>
-                                        </div>
-                                        <p class="post-comment__content__description">
-                                            Và công nghệ thực tế là mình học là của nước ngoài nên nếu bạn
-                                            có chứng chỉ quốc tế, chứng chỉ từ nhà phát hành công nghệ thì
-                                            nó còn có giá trị cao hơn cả bằng cấp bạn lấy được ở Việt Nam.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="comment-action">
-                                    <i class="comment-action__btn fa-solid fa-ellipsis"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="post-comment__write-comment">
-                        <div class="write-comment__avatar">
-                            <img src="https://images.pexels.com/photos/3987110/pexels-photo-3987110.jpeg?auto=compress&cs=tinysrgb&w=1600"
-                                alt="avatar">
-                        </div>
-                        <div class="write-comment__type">
-                            <input type="text" class="write-comment__type__input" placeholder="Viết bình luận...">
-                            <div class="write-comment__type__media">
-                                <i class="media__gif fa-light fa-gif"></i>
-                                <i class="media__image fa-light fa-image-landscape"></i>
-                                <i class="media__emoji fa-light fa-face-smile-beam"></i>
-                            </div>
-                        </div>
-                        <div class="write-comment__sent-btn">
-                            <i class="sent-btn__icon fa-solid fa-paper-plane-top"></i>
-                        </div>
-                    </div>
+                <div class="new-post__modal">
                 </div>
             </div>
-            <div class="new-post__modal">
-            </div>
         </div>
     </div>
-    </div>
-    <script src="./assets/javascript/index.js"></script>
+    <script src="../assets/javascript/index.js"></script>
 </body>
 
 </html>

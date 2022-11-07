@@ -1,7 +1,128 @@
 @import "../common/_mixins";
 
-.main-content {
+
+.profile__main-content {
+    width: 85.5%;
+    margin-left: 13.5%;
+    // padding: 32px;
+    padding-bottom: 0;
+    background-color: #fff;
+    border-radius: 13px;
+    height: 405px;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 0px 2px #ccc;
+    position: relative;
+
+}
+
+.profile__cover-photo {
+    background: url("/assets/images/pexels-pixabay-158385.jpg") center center/cover no-repeat;
+    width: 100%;
+    height: 270px;
+    border-radius: 13px;
+    position: relative;
+
+}
+
+.profile__cover-photo__edit {
+    width: 160px;
+    height: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #fff;
+    border-radius: 13px;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translate3d(-20px, -20px, 10px);
+}
+
+.profile__cover-photo__edit:hover {
+    color: #fff;
+    background-color: #AFB6C2;
+    cursor: pointer;
+}
+
+.profile__avatar {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 170px;
+    width: 170px;
+    transform: translate3d(30px, -140px, 10px);
+}
+
+#avatar {
+    background: url('/assets/images/avt.jpg') center center/cover no-repeat;
+    height: 158px;
+    width: 158px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+button {
+    padding: 18px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background-color: #fff;
+    position: absolute;
+    right: 8%;
+    bottom: 8%;
+    width: 30px;
+    height: 30px;
+}
+
+button:hover {
+    background-color: #AFB6C2;
+    color: #fff;
+}
+
+.profile__main-avatar__name {
+    position: absolute;
+    width: 200px;
+    height: 55px;
+    bottom: 30px;
+    left: 40px;
+    line-height: 30px;
+}
+
+.profile__main-bio__change {
+    position: absolute;
+    width: 126px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    right: 20px;
+    bottom: 19px;
+}
+
+.profile__main-bio__change-btn {
+    height: 40px;
+    width: 106px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(231, 231, 231);
+    border-radius: 13px;
+}
+
+.profile__main-bio__change-btn:hover {
+    background-color: #ccc;
+    cursor: pointer;
+    color: #fff;
+}
+
+.profile__main-content+.main-content {
     @include devicesResponsive(1024px) {
+        flex-basis: 100%;
         width: auto;
     }
 
@@ -13,19 +134,52 @@
         background-color: #fff;
     }
 
-    width: 66%;
-    margin-left: 13%;
+    width: 85.5%;
+    margin-left: 13.5%;
     padding: 32px;
     padding-bottom: 0;
     background-color: #F9FAFB;
     border-radius: 16px;
     display: flex;
     gap: 32px;
+    margin-top: 30px;
 
     .feed-phase {
         flex: 2;
 
     }
+}
+
+.infor-phase {
+    width: 22%;
+    background-color: #fff;
+    border-radius: 13px;
+}
+
+.infor-phase__head {
+    font-weight: 700;
+    font-size: 24px;
+    margin: 20px;
+}
+
+.infor-phase__item {
+    display: flex;
+    width: 165px;
+    height: 20px;
+    margin-left: 20px;
+    margin-top: 10px;
+    align-items: center;
+    // justify-content: space-between;
+}
+
+.infor-phase__change {
+    background-color: rgb(231, 231, 231);
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border-radius: 13px;
+    justify-content: center;
+    margin: 20px 10px 20px 10px;
 }
 
 .feed-phase__new-post {
@@ -158,7 +312,7 @@
     }
 
     .post-content__images {
-        display: grid;
+        // display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
 
         @include devicesResponsive(768px) {
