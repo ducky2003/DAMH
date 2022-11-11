@@ -1819,6 +1819,208 @@ button:hover {
   line-height: 24px;
 }
 
+.setting__main-content {
+  width: 85.5%;
+  margin-left: 13.5%;
+  padding: 32px;
+  padding-bottom: 0;
+  background-color: #F9FAFB;
+  border-radius: 16px;
+  display: flex;
+  height: 1000px;
+}
+
+.setting__main-content__left {
+  width: 25%;
+  background-color: #fff;
+  border-radius: 13px 0px 0px 13px;
+  border-right: 1px solid #ccc;
+}
+.setting__main-content__left .setting__main-content__item-choose {
+  height: 42px;
+  width: 86%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 10px 0px 30px;
+}
+.setting__main-content__left .setting__main-content__item {
+  height: 42px;
+  width: 87%;
+  display: flex;
+  align-items: center;
+  padding: 30px;
+}
+.setting__main-content__left .setting__main-content__item-name {
+  padding-left: 20px;
+}
+.setting__main-content__left .setting__main-content__item:hover {
+  background-color: #4d5d78;
+  color: #fff;
+  border-radius: 13px;
+  cursor: pointer;
+}
+
+.setting__main-content-right {
+  width: 75%;
+  background-color: #fff;
+  border-radius: 0px 13px 13px 0px;
+}
+
+.setting__main-content-right__head {
+  height: 18%;
+}
+.setting__main-content-right__head .setting__header {
+  margin: 30px;
+  font-weight: 700;
+  font-size: 24px;
+  width: 33%;
+}
+.setting__main-content-right__head .profile__avatar {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 170px;
+  width: 170px;
+  transform: translate3d(-5px, -60px, 10px);
+  margin-bottom: 30px;
+}
+.setting__main-content-right__head #avatar {
+  background: url("/assets/images/avt.jpg") center center/cover no-repeat;
+  height: 106px;
+  width: 106px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+}
+.setting__main-content-right__head input[type=file] {
+  display: none;
+}
+.setting__main-content-right__head button {
+  padding: 18px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background-color: #fff;
+  position: absolute;
+  right: 20%;
+  bottom: 20%;
+  width: 30px;
+  height: 30px;
+}
+.setting__main-content-right__head button:hover {
+  background-color: #AFB6C2;
+  color: #fff;
+}
+
+.setting__main-content-right__body {
+  height: 82%;
+  display: flex;
+}
+.setting__main-content-right__body .setting__main-content-right__body-left {
+  width: 50%;
+}
+.setting__main-content-right__body .setting__body-left__item {
+  margin: 0px 0px 20px 30px;
+}
+.setting__main-content-right__body .setting__body-left__item-head {
+  font-weight: 800;
+  font-size: 20px;
+}
+.setting__main-content-right__body .setting__body-left__item-change {
+  width: 355px;
+  height: 43px;
+  border: 1px solid #ccc;
+  border-radius: 13px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+.setting__main-content-right__body .setting__body-left__item-change__phone {
+  width: 355px;
+  height: 43px;
+  border: 1px solid #ccc;
+  border-radius: 13px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+.setting__main-content-right__body .phone-number__first {
+  display: flex;
+  width: 18%;
+  height: 43px;
+  border-right: 1px solid #ccc;
+  align-items: center;
+}
+.setting__main-content-right__body .phone-number__first > p {
+  padding-right: 10px;
+}
+.setting__main-content-right__body .phone-number__change {
+  margin-left: 20px;
+}
+.setting__main-content-right__body .gender__change {
+  display: flex;
+  margin-right: 30px;
+}
+.setting__main-content-right__body .gender__change-btn {
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  margin-right: 10px;
+}
+.setting__main-content-right__body .gender__change-btn:hover {
+  border: 2px solid #377DFF;
+  cursor: pointer;
+}
+.setting__main-content-right__body .gender__change-btn.active {
+  border: 2px solid #ccc;
+  background-color: #377DFF;
+}
+.setting__main-content-right__body .setting__main-content-right__body-right {
+  width: 50%;
+  background-color: #fff;
+}
+.setting__main-content-right__body .setting__main-content-right__body-right .setting__body-right__item {
+  justify-content: flex-end;
+  display: flex;
+  padding: 30px;
+}
+.setting__main-content-right__body .setting__main-content-right__body-right .right__item-btn {
+  font-size: 18px;
+  width: 100px;
+  height: 35px;
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 13px;
+  background-color: #AFB6C2;
+  color: #fff;
+  margin-right: 30px;
+}
+.setting__main-content-right__body .setting__main-content-right__body-right .right__item-btn:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+.setting__main-content-right__body .setting__main-content-right__body-right .right__item-btn__save {
+  font-size: 18px;
+  width: 100px;
+  height: 35px;
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 13px;
+  background-color: #377DFF;
+  color: #fff;
+}
+.setting__main-content-right__body .setting__main-content-right__body-right .right__item-btn__save:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
 .post-container {
   background-color: #fff;
   border-radius: 16px;
